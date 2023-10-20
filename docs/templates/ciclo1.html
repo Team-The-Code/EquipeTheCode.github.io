@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../static/styles/style_ciclo.css">
+    <script href="../static/styles/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        header {
+            background-color: #24252a;
+            box-shadow: 0px 3px 10px #464646;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 6rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            background-image: url("../static/public/unifi.png");
+            background-size: cover;
+            height: 120px;
+            width: 120px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: auto 25px;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .login-button button {
+            border: none;
+            background-color: #0187a7;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .login-button button a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media screen and (max-width: 730px) {
+            .nav-bar {
+                padding: 1.5rem 4rem;
+            }
+
+            .nav-item {
+                display: none;
+            }
+
+            .login-button {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .mobile-menu-icon button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            .mobile.menu ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+
+            .mobile-menu .nav-item {
+                display: block;
+                padding-top: 1.2rem;
+            }
+
+            .mobile-menu .login-button {
+                display: block;
+                padding: 1rem 2rem;
+            }
+
+            .mobile-menu .login-button button {
+                width: 100%;
+            }
+
+            .open {
+                display: block;
+            }
+             }
+            img {
+                padding-left: 450px;
+            }
+            img .logo{
+                padding-right: 70px;
+            }
+            h1{
+                font-size:5vw;
+                font-weight: 600;
+                margin:auto;
+                text-align: center;
+                padding-top: 60px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../static/public/unifi.png"></div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../static/public//menu_white_36dp.svg"></button>
+                </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-view-list"></i>
+        </div>
+        <ul>
+            <li class="item-menu">
+                <a href="#Metodologia ágil">
+                    <span class="icon"><i class="bi bi-lightbulb"></i>
+                    </span>
+                    <span class="txt-link">Metodologia Ágil</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#História scrum">
+                    <span class="icon"><i class="bi bi-book"></i>
+                    </span>
+                    <span class="txt-link">História Scrum</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Funções">
+                    <span class="icon"><i class="bi bi-person-badge"></i>
+                    </span>
+                    <span class="txt-link">Funções</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#Backlog">
+                    <span class="icon"><i class="bi bi-journal-check"></i>
+                    </span>
+                    <span class="txt-link">Backlog</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                    <a href="#MVP">
+                        <span class="icon"><i class="bi bi-archive"></i>
+                        </span>
+                        <span class="txt-link">MVP</span>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="JS/script.js"></script>
+    <div id="texto">
+        <div class="corpo-titulo">
+            <h1>Processos Scrum</h1>
+            <h2>Como Iniciar no método SCRUM</h2>
+        </div>
+        <div  id ="Metodologia ágil" class="corpo-titulo">
+            <h2>Metodologia ágil</h2>
+            <p>Uma metodologia ágil é um conceito de gerenciamento de projetos que promove mais dinamismo ao processo, é um conjunto de estratégias e práticas 
+            para o desenvolvimento e gestão de projetos, que busca dar maior velocidade à conclusão de processos e tarefas. Os gestores conseguem ter uma visão 
+            mais simples e prática das tarefas realizadas pela sua equipe, deixando de lado os processos lentos de entrega, otimizando todas as etapas produtivas. 
+            Essa metodologia começou a ser implementada na área de softwares, mas se expandiu às atividades de inúmeras empresas em todo o mundo. As metodologias ágeis 
+            trabalham a partir de ciclos rápidos e curtos, que costumam ser medidos em semanas, ou meses, e entregam resultados ao final de cada ciclo, em que cada entrega 
+            é revisada de tempos em tempos sem que nada seja deixado de lado por muito tempo, enquanto um projeto tradicional poderia levar anos até chegar na fase de entrega. 
+            Na prática, portanto, as metodologias ágeis proporcionam a criação de fluxos de trabalho mais simples e eficientes para todos. As muitas metodologias que existem, como o próprio SCRUM, seguem o mesmo princípio 
+            que é detalhado no Manifesto Ágil, uma documentação que direciona as prioridades desses métodos de trabalho: Profissionais e suas interações acima de procedimentos 
+            e ferramentas; Funcionamento e eficiência acima de documentação abrangente; Colaboração com o cliente acima da negociação e contrato; Capacidade de resposta a mudanças acima de um plano preestabelecido. 
+            Tudo o que está nessa lista acima deve ser visto como prioridade. Não significa que os outros elementos não tenham a sua importância, mas é preciso priorizar esses elementos específicos, o que vai garantir todo esse dinamismo 
+            e melhor funcionamento dos fluxos de trabalho. As metodologias ágeis defendem que, acima de tudo, devemos buscar a satisfação do cliente por meio de entregas contínuas que agregam valor, mantendo uma comunicação constante entre os membros da equipe.
+            </p>
+        </div>
+        <div id="História scrum" class="corpo-titulo">
+            <h2>História scrum</h2>
+            <p>
+                <p>        
+        O Scrum é um framework ágil para gestão de projetos, amplamente utilizado no desenvolvimento de software, mas também aplicável a diversas outras áreas. Foi inicialmente concebido nos anos 1980 por Hirotaka Takeuchi e Ikujiro Nonaka, que o descreveram em um artigo como um modelo de gestão que se baseava em equipes autônomas e interdisciplinares. No entanto, a forma atual e mais reconhecida do Scrum começou a tomar forma nos anos 1990, quando Ken Schwaber e Jeff Sutherland o formalizaram como um processo de desenvolvimento de software.
+                </p>
+                <p>    
+        A palavra "Scrum" em si vem do rugby, referindo-se a uma formação de jogo onde os jogadores se unem para disputar a posse da bola. No contexto do desenvolvimento de software, o Scrum é uma abordagem iterativa e incremental para o gerenciamento de projetos e desenvolvimento de produtos. A abordagem Scrum é baseada em ciclos curtos de trabalho, chamados de sprints, que geralmente duram de uma a quatro semanas.
+                </p>
+                <p>
+        A metodologia do Scrum enfatiza a colaboração, a auto-organização da equipe e a entrega contínua de valor ao cliente. Os elementos-chave do Scrum incluem papéis definidos (Scrum Master, Product Owner, e Equipe de Desenvolvimento), artefatos (Backlog do Produto, Backlog da Sprint e Incremento), e cerimônias (Sprint Planning, Daily Scrum, Revisão da Sprint e Retrospectiva da Sprint).
+                </p>
+                <p>
+        O Scrum evoluiu ao longo dos anos com a contribuição de inúmeros profissionais e organizações que experimentaram e adaptaram o framework para atender às necessidades específicas de seus projetos e equipes. Diversas variações e adaptações do Scrum surgiram, como o Scrum of Scrums, LeSS (Large Scale Scrum), e o Nexus, destinado a lidar com a complexidade de múltiplas equipes trabalhando em um único produto.
+                </p>
+                <p>    
+        O Scrum ganhou popularidade e reconhecimento como uma abordagem eficaz para a entrega de projetos de software, e foi adotado por muitas empresas e equipes em todo o mundo. Sua ênfase na flexibilidade, transparência e entrega de valor contínuo o tornou uma escolha popular para equipes que buscam uma abordagem ágil e adaptável ao desenvolvimento de produtos e projetos.
+                </p>
+                    </p>
+        </div>
+        <div id="Funções" class="corpo-titulo">
+            <h2>Funções</h2>
+            <p>Na metodologia SCRUM, existem três funções, PO (Product Owner), SM (Scrum Master) e Dev Team (Time de Desenvolvimento). É importante ressaltar que, cargos não interferem nas funções na metodologia SCRUM, qualquer cargo pode aplicar qualquer função, independentemente do nível do cargo, pois a metodologia não segue uma hierarquia, mas o trabalho em equipe igualitário, onde todos precisam de uns aos outros.<br>  
+                O PO (Product Owner) é responsável por ter contato com o cliente e reunir informações que o mesmo pede para seu produto e fazer o Backlog Product, uma lista com itens necessários do produto que o cliente quer e a Sprint Backlog, uma lista de itens separadas para cada sprint e entregar isso para o Dev Team.<br> 
+                Scrum Master dirige, coordena, lidera e aplica as metodologias SCRUM para o Dev Team, ou seja, o dinamismo, trabalho em equipe, organização e orientação para que o trabalho seja executado de forma eficiente e fluida, além de planejar Daily Scrum (Reuniões Diárias) de 15 minutos todos os dias durante o período da sprint, onde são feitas perguntas sobre o que está sendo trabalhado no dia e se existe quaisquer impedimentos que possa diminuir o ritmo de trabalho do Dev Team. <br>
+                O Dev Team são as pessoas que trabalham no projeto e desenvolvem todas as aplicações do software, eles transformam o Product Backlog em um produto funcional, moldam as ideias e desejos do cliente em realidade. O Dev Team trabalha durante o período de todas as sprints, e entregam ao menos o MVP( Minimum Viable Product), ou seja, o Mínimo Produto Viável para o cliente, uma versão funcional que mostra ao cliente como o produto será na sua essência, podendo haver alterações e implementações que melhorem o aspecto visual ou funcional do produto, até atingir a qualidade total do produto, finalizando a entrega completamente e partindo em busca do próximo cliente. </p>
+        </div>
+        <div id="Backlog" class="corpo-titulo">
+            <h2>Backlog</h2>
+            <p>Backlog, é determinado pela mineração de informações com o cliente, de modo a tanto entregar um produto modelo ao cliente, e tanto ter um entendimento geral sobre o desenvolvimento por meio da equipe, sendo está tarefa do Product Owner, alinhar os valores do cliente e da equipe, dessa forma suprindo as necessidades e vontades do cliente.<br>
+                Os processos da Montagem de um Backlog, primeiramente ocorre a reunião com o cliente onde é levantado os requisitos fundamentais na montagem do produto, sendo a entrega de valor ao cliente fundamental nessa primeira reunião, e o entendimento geral sobre o projeto. A partir desse momento, é montado o Product Backlog, sendo este um documento que está amplamente aberto a modificações durante todas as Sprints, visto que, a coleta de dados não é algo imutável, mas sim, um fluxo de informações que complementa e atualiza novas visões sobre o todo do produto. Após a análise de requisitos, é montada a história do usuário sobre o produto, tendo como foco, como o usuário vai ter acesso as informações, como será as interações e o que será necessário para concluir tais funções por meio de tarefas claras e objetivas a equipe de desenvolvimento. Visto assim, a equipe de desenvolvimento como foco dessa parte do projeto, sendo este o que montarão a aplicação na parte prática. Concluindo assim, a importância de um projeto com muita descrição e entendimento de todo as parte no  desenvolvimento do produto, e assim, definindo as sprints no qual será desenvolvida  todo o projeto e aliado com o planning poker, entender as métricas e esforço da equipe perante ao projeto e o tempo de construção total da aplicação.
+            </p>
+        </div>
+        <div id="MVP" class="corpo-titulo">
+            <h2>MVP</h2>
+            <p> O Mínimo Produto Viável (MVP) é um conceito amplamente utilizado em empreendedorismo e desenvolvimento de produtos, que se concentra em criar a versão mais simples de um produto ou serviço que ainda seja funcional e atenda às necessidades básicas dos clientes. O principal objetivo do MVP é validar hipóteses e testar a viabilidade de um conceito ou ideia com o mínimo de esforço e recursos possível. Aqui estão os pontos-chave do MVP:
+            <p>    
+                Aprendizado rápido: O MVP ajuda as equipes a aprenderem rapidamente com os erros e sucessos, ajustando sua estratégia com base nos dados reais do mercado.
+            </p>
+            <p>    
+                Redução de riscos: Ao iniciar com um MVP, as empresas reduzem o risco de desenvolver um produto ou serviço que não encontre aceitação no mercado, minimizando perdas financeiras.
+            </p>
+            <p>    
+                Exemplos: Um MVP pode ser algo tão simples quanto um protótipo funcional, uma página de destino para coletar inscrições, ou até mesmo um produto com recursos básicos, mas completamente funcional.
+            </p>
+            <p>
+                Twitter: Quando o Twitter foi lançado, ele não tinha todas as características que vemos hoje. O MVP inicial permitia aos usuários compartilharem mensagens curtas com seus seguidores. A funcionalidade de retweet, respostas e outras características foram adicionadas conforme o feedback dos usuários e a demanda cresceram.
+            </p>
+            <p>   
+                Facebook: Nos estágios iniciais, o Facebook era limitado apenas a alunos de Harvard e, posteriormente, a outras universidades. Ele começou como uma plataforma simples para conectar estudantes e compartilhar informações básicas antes de evoluir para a rede social complexa que é hoje.
+            </p>                
+                </p>
+    
+        </div>
+        <div btn>
+            <button class="btn-ativit"><a href="./atividade.html">Atividade</a></button>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="logos">
+            <img src="../static/public/LogoUnify.png"/>
+            <img src="../static/public/145785857-2_resized.png"/>
+        </div>
+        <a>©2023 - 2024&nbsp;&nbsp;Unify.</a>
+    </footer>
+</body>
+
+</html>
