@@ -14,13 +14,16 @@ body {
     display: inline-block;
     padding: 30px 70px;
     font-size: 1.5rem;
-    text-transform: uppercase;
     background: #111;
     color: #fff;
     border-radius: 50px;
     transition: background 500ms ease;
 }
 
+li > a{
+    color: #fff;
+    text-decoration: none;
+}
 .btn:hover {
     cursor: pointer;
     background-color: #c9fbff34;
@@ -55,7 +58,10 @@ body {
 #navbar-itens {
     display: flex;
     list-style: none;
-    text-transform: uppercase;
+}
+#navbar-itens >li >a:hover {
+    cursor: pointer;
+    color: #544FA9;
 }
 
 #navbar-itens li {
@@ -64,10 +70,7 @@ body {
     padding: 40px;
 }
 
-#navbar-itens li:hover {
-    cursor: pointer;
-    color: #544FA9;
-}
+
 
     /*header*/
 #showcase{
@@ -132,38 +135,33 @@ body {
 }
 
     /*Rodapé*/
-#footer {
-    height: 25vh;
-    background-color: #000;
-    color: #fff;
-    background-size: cover;
-}
-
-#logos{
-    display: flex;
-    justify-content: right;
-    margin-right: 200px;
-    padding-top: 60px;
-}
-
-#logos > div img{
-    padding-right: 30px;
-}
-
-#footer a {
-    font-size: 1.4rem;
-    display: flex;
-    text-align: center;
-    margin-left: 200px;
-    margin-top: -80px;
+    #footer {
+        height: 30vh;
+        background-color: #000;
+        color: #fff;
+        background-size: cover;
+    }
     
-}
+    #logos{
+        display: flex;
+        justify-content: right;
+        margin-right: 200px;
+        padding-top: 60px;
+    }
+    
+    #logos > div img{
+        padding-right: 30px;
+    }
+    
+    #footer a {
+        font-size: 1.4rem;
+        display: flex;
+        text-align: center;
+        margin-left: 200px;
+        margin-top: -80px;
+        
+    }
 
-#linha{
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-}
 
 
 
