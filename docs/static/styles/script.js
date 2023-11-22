@@ -1,12 +1,9 @@
-function menushow(){
-    let menuMobile = document.querySelector('.mobile-menu');
-    if(menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "img/menu_white_36dp.svg";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "img/menu_white_36dp.svg";
+function imprimir() {
+    var printContents = document.getElementById("container").innerHTML;
+    var originalContents = document.body.innerHTML;
 
-    }   
-    
+    document.body.innerHTML = printContents;
+    window.print();
+
+    document.body.innerHTML = originalContents;
 }
