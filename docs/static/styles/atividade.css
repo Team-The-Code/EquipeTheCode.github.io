@@ -5,10 +5,13 @@
 }
 
 body {
+    background-color: #000;
     font-family: Roboto;
     background-image: url("../public/question-mark-2492009.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;
+    
+
 }
 a {
     text-decoration: none;
@@ -171,14 +174,13 @@ button > a{
 }
 
 .button {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     border: 0;
     border-radius: 2vh;
-    height: 10vh;
+    height: 100%;
     width: 100%;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 1vh;
     transition: 0.2s;
     margin-bottom: 1vh;
     
